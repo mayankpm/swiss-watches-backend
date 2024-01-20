@@ -1,0 +1,32 @@
+# .gitignore
+
+# Virtual environment
+venv/
+
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Editor or IDE specific files
+.vscode/
+.idea/
+
+# Environment variables or configuration files
+.env
+
+# Compiled Python files
+*.pyc
+
+# Logs
+*.log
+
+# MySQL database settings file
+db.cnf
+
+# Database migrations
+*/migrations/
+
+# Ignore the local settings file if you have one
+local_settings.py
