@@ -56,7 +56,6 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -64,7 +63,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Hello.urls'
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_ORIGIN = 'http://localhost:5173'
+CORS_ALLOW_ORIGIN = [
+    "http://localhost:5173", 
+    "https://your-vercel-app.vercel.app",
+]
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_METHODS = [
