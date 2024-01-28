@@ -114,16 +114,16 @@ WSGI_APPLICATION = 'Hello.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-# 	'default': {
-# 		'ENGINE': 'django.db.backends.mysql',
-# 		'NAME': 'abc',
-# 		'USER': 'root',
-# 		'PASSWORD': 'helloworld',
-# 		'HOST':'localhost',
-# 		'PORT':'3306',
-# 	}
-# }
+DATABASES = {
+	'default': {
+		'ENGINE': 'django.db.backends.mysql',
+		'NAME': 'abc',
+		'USER': 'root',
+		'PASSWORD': 'helloworld',
+		'HOST':'localhost',
+		'PORT':'3306',
+	}
+}
 
 
 AUTH_USER_MODEL = 'authentication.User'
