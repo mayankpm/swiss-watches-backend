@@ -11,10 +11,17 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# At the end of file. add these lines
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+MEDIA_URLS ='/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -23,9 +30,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+rotbt()bhfk=7c45amys00#8s*9f$z9z95o)lgs^ldvr3b(1@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['.onrender.com'] 
+ALLOWED_HOSTS = ['*'] 
 
 
 
@@ -105,16 +112,16 @@ WSGI_APPLICATION = 'Hello.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-	'default': {
-		'ENGINE': 'django.db.backends.mysql',
-		'NAME': 'abc',
-		'USER': 'root',
-		'PASSWORD': 'helloworld',
-		'HOST':'localhost',
-		'PORT':'3306',
-	}
-}
+# DATABASES = {
+# 	'default': {
+# 		'ENGINE': 'django.db.backends.mysql',
+# 		'NAME': 'abc',
+# 		'USER': 'root',
+# 		'PASSWORD': 'helloworld',
+# 		'HOST':'localhost',
+# 		'PORT':'3306',
+# 	}
+# }
 
 
 AUTH_USER_MODEL = 'authentication.User'
