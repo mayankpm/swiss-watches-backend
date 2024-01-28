@@ -74,6 +74,8 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_ORIGIN = [
     "http://localhost:5173", 
     "https://your-vercel-app.vercel.app",
+    "https://swiss-watches-backend.vercel.app/",
+    "https://swiss-watches-backend-kgrmzcmll-mayankpm.vercel.app/"
 ]
 CORS_ALLOW_CREDENTIALS = True
 
