@@ -1,13 +1,11 @@
- echo "BUILD START"
- source venv/bin/activate
+#!/bin/bash
 
-# Navigate to the directory where the script is located
-cd "$(dirname "$0")"
+echo "BUILD START"
 
-# Navigate to the project directory
-echo "Virtual environment activated. Running script..."
- python3 -m pip install -r requirements.txt
- python3 manage.py collectstatic --noinput --clear
- echo "BUILD END"
+# Install dependencies using Vercel's built-in Python builder
+python3 -m pip install -r requirements.txt
 
-deactivate
+# Collect static files
+python3 manage.py collectstatic --noinput --clear
+
+echo "BUILD END"
