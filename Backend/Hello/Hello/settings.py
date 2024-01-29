@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+# import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -113,20 +114,43 @@ WSGI_APPLICATION = 'Hello.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'abc',
+        'NAME': 'watchdb_8hi0',
         'USER': 'root',
-        'PASSWORD': 'helloworld',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'PASSWORD': '2itv06I4DFLPrutCEu4PIpDN7WonKefz',
+        'HOST': 'dpg-cmrjd5v109ks73fibh5g-a.oregon-postgres.render.com',
+        'PORT': '5432',  # Leave empty to use the default PostgreSQL port (5432)
     }
 }
+# DATABASES['default'] = dj_database_url.parse("postgres://root:2itv06I4DFLPrutCEu4PIpDN7WonKefz@dpg-cmrjd5v109ks73fibh5g-a.oregon-postgres.render.com/watchdb_8hi0")
+
+# BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': '1aE5ccFcCdgb53daBAEC1B1beFgd42c3',
+#         'HOST': 'monorail.proxy.rlwy.net',
+#         'PORT': '21831',
+#     }
+# }
 
-
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'abc',
+#         'USER': 'root',
+#         'PASSWORD': 'helloworld',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 AUTH_USER_MODEL = 'authentication.User'
 
