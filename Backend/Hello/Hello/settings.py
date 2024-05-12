@@ -118,13 +118,14 @@ WSGI_APPLICATION = 'Hello.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'watchdb_8hi0',
-        'USER': 'root',
-        'PASSWORD': '2itv06I4DFLPrutCEu4PIpDN7WonKefz',
-        'HOST': 'dpg-cmrjd5v109ks73fibh5g-a.oregon-postgres.render.com',
-        'PORT': '5432',  # Leave empty to use the default PostgreSQL port (5432)
+        'NAME': 'watch_db_6xq4',
+        'USER': 'watch_db_6xq4_user',
+        'PASSWORD': 'yu1JJD8QW9saBBvNdZXIGCyT3uNtEOx0',
+        'HOST': 'dpg-cp0b89vjbltc73dqct1g-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
+
 # DATABASES['default'] = dj_database_url.parse("postgres://root:2itv06I4DFLPrutCEu4PIpDN7WonKefz@dpg-cmrjd5v109ks73fibh5g-a.oregon-postgres.render.com/watchdb_8hi0")
 
 # BASE_DIR = Path(__file__).resolve().parent.parent
