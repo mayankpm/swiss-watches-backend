@@ -118,10 +118,10 @@ WSGI_APPLICATION = 'Hello.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'watch_db_6xq4',
-        'USER': 'watch_db_6xq4_user',
-        'PASSWORD': 'yu1JJD8QW9saBBvNdZXIGCyT3uNtEOx0',
-        'HOST': 'dpg-cp0b89vjbltc73dqct1g-a.oregon-postgres.render.com',
+        'NAME': 'watch_db_x3tp',
+        'USER': 'watch_db_x3tp_user',
+        'PASSWORD': '4jVwNNLPWLL7fsrufNFDbIanoacItPU3',
+        'HOST': 'dpg-cuu8bmpopnds739uf7bg-a.oregon-postgres.render.com',
         'PORT': '5432',
     }
 }
