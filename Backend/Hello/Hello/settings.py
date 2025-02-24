@@ -118,10 +118,10 @@ WSGI_APPLICATION = 'Hello.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'watch_db_x3tp',
-        'USER': 'watch_db_x3tp_user',
-        'PASSWORD': '4jVwNNLPWLL7fsrufNFDbIanoacItPU3',
-        'HOST': 'dpg-cuu8bmpopnds739uf7bg-a.oregon-postgres.render.com',
+        'NAME': 'neondb',
+        'USER': 'neondb_owner',
+        'PASSWORD': 'npg_tJHc7Oxfrl2E',
+        'HOST': 'ep-dark-glitter-a5hbruy9-pooler.us-east-2.aws.neon.tech',
         'PORT': '5432',
     }
 }
